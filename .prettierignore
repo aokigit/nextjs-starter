@@ -1,0 +1,10 @@
+.env
+.env.development
+.env.local
+.env.production
+.gitignore
+.next
+build
+certificates
+dist
+node_modules

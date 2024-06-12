@@ -1,0 +1,16 @@
+{
+  "extends": ["next/core-web-vitals", "prettier", "plugin:tailwindcss/recommended"],
+  "plugins": ["prettier", "tailwindcss"],
+  "rules": {
+    "react-hooks/rules-of-hooks": "off",
+    "tailwindcss/no-custom-classname": "off",
+    "tailwindcss/classnames-order": "error",
+    "prefer-const": "error"
+  },
+  "settings": {
+    "tailwindcss": {
+      "callees": ["cn", "cva", "tv"],
+      "removeDuplicates": true
+    }
+  }
+}
