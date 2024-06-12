@@ -1,9 +1,9 @@
-import { type Config } from "tailwindcss";
+import type { Config } from "tailwindcss";
 import colors from "tailwindcss/colors";
 import { fontFamily } from "tailwindcss/defaultTheme";
 
 const config: Config = {
-  content: ["./app/**/*.{ts,tsx,mdx}", "./components/**/*.{ts,tsx,mdx}","./ui/**/*.{ts,tsx,mdx}"],
+  content: ["./app/**/*.{ts,tsx,mdx}", "./components/**/*.{ts,tsx,mdx}", "./ui/**/*.{ts,tsx,mdx}"],
   theme: {
     colors: {
       brand: colors.purple,
@@ -32,9 +32,7 @@ const config: Config = {
       mono: ["var(--font-geist-mono)", ...fontFamily.mono],
       sans: ["var(--font-geist-sans)", ...fontFamily.sans],
     },
-    extend: {
-
-    },
+    extend: {},
   },
   plugins: [],
 };
